@@ -35,19 +35,26 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'base-test-setup',
+      testMatch: '/base-test.ts'
+    },
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['base-test-setup']
     },
 
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
+      dependencies: ['base-test-setup']
     },
 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },
+      dependencies: ['base-test-setup']
+    }
 
     /* Test against mobile viewports. */
     // {
