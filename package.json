@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/brandon-wilson1993/shakespeare#readme",
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.0"
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.0",
+    "allure-playwright": "^3.4.5"
   },
   "dependencies": {
     "playwright": "^1.56.1"
